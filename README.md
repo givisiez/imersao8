@@ -6,7 +6,7 @@ TODO: formatar esse doc melhor
 
 ### Instalar todas as dependências indicada pelo package.json
 ```npm i
-
+```
 ###  Criar o arquivo package
 Para criar projeto/create a package.json file
 CLI: https://docs.npmjs.com/cli/v6/commands/npm-init
