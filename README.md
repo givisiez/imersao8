@@ -53,8 +53,8 @@ set PATH=%PATH%;C:\Users\"Aqui seu usuario"\AppData\Roaming\npm;
 ```
 
 ### Json Web Token (JWT) - Padrao que define como transmitir e armazenasr dados ou objetos JSON de forma compacta e segura entre diferentes aplicacoes.
-Os dados contitos podemo ser validados a qualquer momento pois o token é assinado digitalmente.
->> https://jwt.io
+Os dados contidos podem ser validados a qualquer momento pois o token é assinado digitalmente.
+Para verificar a assinatura: https://jwt.io
 Package: https://www.npmjs.com/package/jsonwebtoken
 ```
 npm i --save jsonwebtoken
