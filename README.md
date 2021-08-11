@@ -5,16 +5,16 @@ Aplicação simples em NodeJs com React e React Nastive!
 TODO: formatar esse doc melhor
 
 Instalar todas as dependências indicada pelo package.json
-### npm i
+### $npm i
 
 Criar o arquivo package
 Para criar projeto/create a package.json file
 CLI: https://docs.npmjs.com/cli/v6/commands/npm-init
-### npm init
+### $npm init
 
 Gerencia as requisições, rotas e URLs, ebntre outras funcionalidades
 Package: https://www.npmjs.com/package/express
-### npm i express
+### $npm i express
 
 Para rodar o Projeto ( Sem o nodemon )
 ### node app.js
@@ -25,7 +25,7 @@ Para acessar o projeto no navegador (Informe a porta do seu projeto Ex: 8080)
 Para rodar projeto sem necessidade de fechar e abrir o terminal após alteração.
 Instalar o módulo para reiniciar o servidor sempre que houver alteração no código fonte.
 Package: https://www.npmjs.com/package/nodemon
-### npm i -g nodemon
+### $npm i -g nodemon
 
 Para rodar o projeto. Substitui o "node app.js".
 ### nodemon app.js ou ### npm start
