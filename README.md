@@ -4,7 +4,7 @@ Aplicação simples em NodeJs com React e React Nastive!
 
 TODO: formatar esse doc melhor
 
-Instalar todas as dependencias indicada pelo package.json
+Instalar todas as dependências indicada pelo package.json
 ### npm i
 
 Criar o arquivo package
