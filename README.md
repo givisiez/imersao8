@@ -16,12 +16,14 @@ npm init
 ```
 ### Gerencia as requisições, rotas e URLs, ebntre outras funcionalidades
 Package: https://www.npmjs.com/package/express
-```npm i express
+```
+npm i express
 ```
 
 ### Para rodar o Projeto ( Sem o nodemon )
 
-```node app.js
+```
+node app.js
 ```
 
 ### Para acessar o projeto no navegador (Informe a porta do seu projeto Ex: 8080)
