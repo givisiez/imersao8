@@ -4,13 +4,13 @@ Aplicação simples em NodeJs com React e React Nastive!
 
 TODO: formatar esse doc melhor
 
-Instalar todas as dependências indicada pelo package.json
-### npm i
+### Instalar todas as dependências indicada pelo package.json
+$ npm i
 
-Criar o arquivo package
+###  Criar o arquivo package
 Para criar projeto/create a package.json file
 CLI: https://docs.npmjs.com/cli/v6/commands/npm-init
-### npm init
+$ npm init
 
 Gerencia as requisições, rotas e URLs, ebntre outras funcionalidades
 Package: https://www.npmjs.com/package/express
