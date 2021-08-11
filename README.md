@@ -64,7 +64,7 @@ npm i --save jsonwebtoken
 https://generate.plus/
 
 ## Gerencia variáveis de ambiente (.env)
-Crie um arquivo .env na raiz do projeto "/src"
+Crie um arquivo .env na raiz do projeto "/api"
 
 Package: https://www.npmjs.com/package/dotenv
 ```
