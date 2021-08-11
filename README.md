@@ -1,10 +1,9 @@
-PROJETO SIMPLES EM NODEJS
-Passoa a passo de como criar uma API em NodeJs de forma simples para 
-quem está iniciando.
+## PROJETO SIMPLES EM NODEJS, React e React NAtive
 
-SEQUENCIA PARA CRIAR O PROJETO
+Aplicação simples em NodeJs com React e React Nastive!
+
 Instalar todas as dependencias indicada pelo package.json
-## npm i
+### npm i
 
 Criar o arquivo package
 Para criar projeto/create a package.json file
