@@ -1,0 +1,19 @@
+version: '1'
+
+services: 
+  mysql:
+    image: mysql:latest
+    container_name: mysqlDev    
+    volumes:
+    - "C:/mysql:/var/lib/mysql"
+    environment:
+    - MYSQL_ROOT_PASSWORD=rootPass
+    - MYSQL_USER=gondor 
+    - MYSQL_PASSWORD=userPass
+    - MYSQL_DATABASE=imersaoNodejs
+    cap_add:
+      - SYS_NICE 
+    command: --default-authentication-plugin=mysql_native_password --unhandled-rejections=strict
+    restart: always
+    ports: 
+    - 3306:3306
