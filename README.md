@@ -1,4 +1,4 @@
-## PROJETO SIMPLES EM NODEJS, React e React NAtive
+## Simples projeto em NodeJs, React e React Native
 
 Aplicação simples em NodeJs com React e React Nastive!
 
