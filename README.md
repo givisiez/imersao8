@@ -11,8 +11,9 @@ npm i
 ###  Criar o arquivo package
 Para criar projeto/create a package.json file
 CLI: https://docs.npmjs.com/cli/v6/commands/npm-init
-$ npm init
-
+```
+npm init
+```
 Gerencia as requisições, rotas e URLs, ebntre outras funcionalidades
 Package: https://www.npmjs.com/package/express
 ### npm i express
