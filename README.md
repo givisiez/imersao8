@@ -2,6 +2,8 @@
 
 Aplicação simples em NodeJs com React e React Nastive!
 
+TODO: formatar esse doc melhor
+
 Instalar todas as dependencias indicada pelo package.json
 ### npm i
 
