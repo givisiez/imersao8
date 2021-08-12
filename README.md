@@ -1,15 +1,14 @@
 <h1>Simples projeto em NodeJs, React e React Native</h1>
-
-Aplicação simples em NodeJs com React e React Nastive!
-
-TODO: formatar esse doc melhor
+<h6>Aplicação simples em NodeJs com React e React Nastive!</h6>
 
 <h2>API NODEJS</h2>
 <h3>Instalar todas as dependências indicada pelo package.json</h3>
 `npm i`
-###  Criar o arquivo package
-Para criar projeto/create a package.json file
-CLI: https://docs.npmjs.com/cli/v6/commands/npm-init
+<h4>Criar o arquivo package</h4>
+<p>
+    Para criar projeto/create a package.json file
+    CLI: https://docs.npmjs.com/cli/v6/commands/npm-init
+    </p>
 
 `npm init`
 
@@ -47,10 +46,16 @@ npm config get prefix
 set PATH=%PATH%;C:\Users\"Aqui seu usuario"\AppData\Roaming\npm;
 ```
 
-<h2>Json Web Token (JWT) - Padrao que define como transmitir e armazenasr dados 
-ou objetos JSON de forma compacta e segura entre diferentes aplicacoes.</h2>
+<h2>Json Web Token (JWT)</h2>
+<p>
+    Padrao que define como transmitir e armazenasr dados ou objetos JSON 
+    de forma compacta e segura entre diferentes aplicacoes.
+</p>
 
-<p>Os dados contidos podem ser validados a qualquer momento pois o token é assinado digitalmente.</p>
+<p>
+    Os dados contidos podem ser validados a qualquer momento pois o token é 
+    assinado digitalmente.
+</p>
 
 <ul>
    <li>Para verificar a assinatura: https://jwt.io</li>
@@ -60,10 +65,10 @@ ou objetos JSON de forma compacta e segura entre diferentes aplicacoes.</h2>
 `npm i --save jsonwebtoken`
 
 <h2>Gerar chaves</h2>
-https://generate.plus/
+<p>https://generate.plus/</p>
 
 <h2>Gerencia variáveis de ambiente (.env)</h2>
-Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.
+<p>Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.</p>
 
 <ul>
     <li>SECRETE_KEY = 'crieSuaChaveAleatoria01010101'</li>
@@ -75,7 +80,9 @@ Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.
     <li>DB_PORT = 3306'</li>
 </ul>
 
-<p><b>Package:</b> https://www.npmjs.com/package/dotenv</p>
+<p>
+    <b>Package:</b> https://www.npmjs.com/package/dotenv
+</p>
 
 `npm i --save dotenv`
 
@@ -85,11 +92,13 @@ https://www.npmjs.com/package/cors
 `npm i --save cors`
 
 <h2>Banco de dados  - Mysql 8</h2>
-<p>Você pode instalar o Mysql ou via Docker, que foi o meu caso.<br />
-Download do Docker Compose para Windows e Mac<br />
-https://docs.docker.com/compose/install/<br />
-Irá construir as images caso precise e rodar os containers<br />
-./api/docker-compose.yaml</p>
+<p>
+    Você pode instalar o Mysql ou via Docker, que foi o meu caso.<br />
+    Download do Docker Compose para Windows e Mac<br />
+    https://docs.docker.com/compose/install/<br />
+    Irá construir as images caso precise e rodar os containers<br />
+    ./api/docker-compose.yaml
+</p>
 
 `docker-compose up -d`
 
@@ -98,8 +107,11 @@ Irá construir as images caso precise e rodar os containers<br />
 
 `npm i --save mysql2`
 
-<h2>Sequelize é uma biblioteca que auxilia o gerenciamento de banco de dados SQL.</h2>
-<p>https://sequelize.org/</p>
+<h2>Sequelize</h2>
+<p>
+    Biblioteca que auxilia o gerenciamento de banco de dados SQL.<br />
+    https://sequelize.org/
+</p>
 
 `npm i --save sequelize`
 
@@ -109,24 +121,34 @@ Irá construir as images caso precise e rodar os containers<br />
 `npm i --save bcryptjs`
 
 <h2>APP REACT</h2>
-<p>Agora vamos criar uma tela de login para se comunicar com a nossa API.<br />
-O comando abaixo irá criar a estrutura padrão para iniciarmos.<br />
-Obs: Rode o comando fora da pasta/projeto API.<br />
-Teremos dois diretórios: API e APP.</p>
+<p>
+    Agora vamos criar uma tela de login para se comunicar com a nossa API.<br />
+    O comando abaixo irá criar a estrutura padrão para iniciarmos.<br />
+    Obs: Rode o comando fora da pasta/projeto API.<br />
+    Teremos dois diretórios: API e APP.
+</p>
 
 `npx create-react-app app`
 
-<p>Rode o comando NPM start para abrir o projeto no browser "http://localhost:3000/". <br />
-Se tudo der certo, irá abrir com o logotipo do React. </p>
+<p>
+    Rode o comando NPM start para abrir o projeto no browser "http://localhost:3000/". <br />
+    Se tudo der certo, irá abrir com o logotipo do React. 
+</p>
 
 <h2>Deploy</h2>
-<p>Iremos utilizar duas plataformas grátis para hospedar nossas aplicações.
-O obejtivo de separa é só para demonstrar a prática em separar os serviços.
-Mas poderia deixar tudo na plataforma do Heroku, por exemplo.</p>
+<p>
+    Iremos utilizar duas plataformas grátis para hospedar nossas aplicações.
+    O obejtivo de separa é só para demonstrar a prática em separar os serviços.
+    Mas poderia deixar tudo na plataforma do Heroku, por exemplo.
+</p>
 <h2>Vercel</h2>
-Para publicar o app React.
-https://vercel.com/
+<p>
+    Para publicar o app React. <br/>
+    https://vercel.com/
+</p>
 <h2>Heroku</h2>
-Para hospedar a API NodeJs com banco Mysql. <br />
-https://id.heroku.com
+<p>
+    Para hospedar a API NodeJs com banco Mysql. <br />
+    https://id.heroku.com
+</p>
 
