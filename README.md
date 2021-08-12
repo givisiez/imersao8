@@ -37,7 +37,7 @@ nodemon app.js
 ou
 npm start
 ```
-<h2>Se retornar erro, adicione o caminho nas variáveis de ambiente.</h2>
+<h2>Se retornar erro, adiciona o caminho nas variáveis de ambiente.</h2>
 
 ```
 npm i -g nodemon
@@ -60,6 +60,7 @@ set PATH=%PATH%;C:\Users\"Aqui seu usuario"\AppData\Roaming\npm;
 
 `npm i --save jsonwebtoken`
 <h2>Gerar chaves</h2>
+<p>Site gratuito para gerar chaves.</p>
 <p>https://generate.plus/</p>
 <h2>Gerencia variáveis de ambiente (.env)</h2>
 <p>Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.</p>
