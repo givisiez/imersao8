@@ -119,7 +119,7 @@ O obejtivo de separa é só para demonstrar a prática em separar os serviços.
 Mas poderia deixar tudo na plataforma do Heroku, por exemplo.
 <b>VERCEL</b><br />
 Para publicar o app React. <br />
-https://vercel.com/
+https://vercel.com/ <br />
 <b>Heroku</b> <br />
 Para hospedar a API NodeJs com banco Mysql. <br />
 https://id.heroku.com
