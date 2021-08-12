@@ -4,7 +4,8 @@ Aplicação simples em NodeJs com React e React Nastive!
 
 TODO: formatar esse doc melhor
 
-### Instalar todas as dependências indicada pelo package.json
+### API NODEJS
+## Instalar todas as dependências indicada pelo package.json
 ```
 npm i
 ```
@@ -103,4 +104,13 @@ npm i --save sequelize
 https://preview.npmjs.com/package/bcryptjs/v/1.0.1
 ```
 npm i --save bcryptjs
+```
+
+### APP REACT
+Agora vamos criar uma tela de login para se comunicar com a nossa API.
+O comando abaixo irá criar a estrutura padrão para iniciarmos.
+Obs: Rode o comando fora da pasta/projeto API.
+Teremos dois diretório: API e APP.
+```
+npx create-react-app app
 ```
