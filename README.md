@@ -68,6 +68,7 @@ https://generate.plus/
 Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.
 
 [x] SECRETE_KEY = 'crieSuaChaveAleatoria01010101'
+
 [x] URL_REQUEST = 'http://localhost:8080/'
 [x] DB_HOST = '127.0.0.1'
 [x] DB_USER = 'root'
