@@ -1,5 +1,5 @@
 <h1>Simples projeto em NodeJs, React e React Native</h1>
-<h6>Aplicação simples em NodeJs com React e React Nastive!</h6>
+<h6>Aplicação simples em NodeJs com React e React Native!</h6>
 
 <h2>API NODEJS</h2>
 <h3>Instalar todas as dependências indicada pelo package.json</h3>
