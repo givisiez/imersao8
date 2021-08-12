@@ -6,6 +6,7 @@
 </p>
 
 ![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
+![Estrutura geral](https://github.com/givisiez/imersao8/blob/main/images/estrutura-geral.png?raw=true)
 
 `npm i`
 <h4>Criar o arquivo package</h4>
@@ -122,6 +123,8 @@ https://www.npmjs.com/package/cors
 	Rode o comando NPM start para abrir o projeto no browser "http://localhost:3000/". <br  />
 	Se tudo der certo, irá abrir com o logotipo do React.
 </p> 
+
+![Estrutura inicial do APP](https://github.com/givisiez/imersao8/blob/main/images/estrutura-app.png?raw=true)
 
 <h2>Deploy</h2>
 <p>
