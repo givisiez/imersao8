@@ -117,7 +117,12 @@ Se tudo der certo, irá abrir com o logotipo do React.
 Iremos utilizar duas plataformas grátis para hospedar nossas aplicações.
 O obejtivo de separa é só para demonstrar a prática em separar os serviços.
 Mas poderia deixar tudo na plataforma do Heroku, por exemplo.
+<h1>VERCEL</h1>
 <h2>VERCEL</h2>
+<h3>VERCEL</h3>
+<h4>VERCEL</h4>
+<h5>VERCEL</h5>
+<h6>VERCEL</h6>
 Para publicar o app React. <br />
 https://vercel.com/ <br /><br />
 <b>Heroku</b> <br />
