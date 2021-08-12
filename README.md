@@ -5,6 +5,7 @@
 	Clone o projeto e instale todas as dependências indicadas pelo "./package.json"<br>
 	Abaixo imagens da estrutura das aplicações.
 </p>
+
 ![Estrutura geral](https://github.com/givisiez/imersao8/blob/main/images/estrutura-geral.png?raw=true)
 
 ![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
