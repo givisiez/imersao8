@@ -65,7 +65,15 @@ npm i --save jsonwebtoken
 https://generate.plus/
 
 ## Gerencia variáveis de ambiente (.env)
-Crie um arquivo .env na raiz do projeto "/api"
+Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.
+
+[x] SECRETE_KEY = 'crieSuaChaveAleatoria01010101'
+[x] URL_REQUEST = 'http://localhost:8080/'
+[x] DB_HOST = '127.0.0.1'
+[x] DB_USER = 'root'
+[x] DB_PASSWORD = 'userPass'
+[x] DB_DATABASE = 'imersaoNodejs'
+[x] DB_PORT = 3306
 
 Package: https://www.npmjs.com/package/dotenv
 ```
@@ -110,7 +118,10 @@ npm i --save bcryptjs
 Agora vamos criar uma tela de login para se comunicar com a nossa API.
 O comando abaixo irá criar a estrutura padrão para iniciarmos.
 Obs: Rode o comando fora da pasta/projeto API.
-Teremos dois diretório: API e APP.
+Teremos dois diretórios: API e APP.
 ```
 npx create-react-app app
 ```
+Rode o comando NPM start para abrir o projeto no browser "http://localhost:3000/". 
+Se tudo der certo, irá abrir com o logotipo do React.
+
