@@ -37,7 +37,7 @@ nodemon app.js
 ou
 npm start
 ```
-<h2>Se retornar erro, adiciona o caminho nas variáveis de ambiente.</h2>
+<h2>Se retornar erro, adicione o caminho nas variáveis de ambiente.</h2>
 
 ```
 npm i -g nodemon
