@@ -29,7 +29,8 @@ Package: https://www.npmjs.com/package/express
 </p>  
 
 `npm i -g nodemon`
-<h2>Para rodar o projeto. Substitui o "node app.js".</h2>
+<h2>Para rodar o projeto. </h2>
+<p>Substitui o "node app.js".</p>
 
 ```
 nodemon app.js
