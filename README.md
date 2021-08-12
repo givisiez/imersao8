@@ -6,6 +6,7 @@
 	Abaixo imagens da estrutura das aplicações.
 </p>
 ![Estrutura geral](https://github.com/givisiez/imersao8/blob/main/images/estrutura-geral.png?raw=true)
+
 ![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
 
 
