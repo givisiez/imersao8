@@ -1,9 +1,11 @@
-<h1>Simples projeto em NodeJs, React e React Native</h1>
-<p>Aplicação simples em NodeJs com React e React Native!</p>
+<h1>Projeto em NodeJs, React e React Native</h1>
+<p>Aplicação simples utilizada para fins de estudos.</p>
 <h2>API NodeJs</h2>
 <p>
 	Clone o projeto e instale todas as dependências indicadas pelo "./package.json"
 </p>
+
+![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
 
 `npm i`
 <h4>Criar o arquivo package</h4>
@@ -123,7 +125,7 @@ https://www.npmjs.com/package/cors
 
 <h2>Deploy</h2>
 <p>
-	Iremos utilizar duas plataformas "grátis" para hospedar nossas aplicações.
+	Iremos utilizar duas plataformas grátis para hospedar nossas aplicações.
 	O obejtivo de separa é só para demonstrar a prática em separar os serviços.
 	Mas poderia deixar tudo na plataforma do Heroku, por exemplo.
 </p>
@@ -135,6 +137,5 @@ https://vercel.com/
 <h2>Heroku</h2>
 <p>
 	Para hospedar a API NodeJs com banco Mysql. <br  />
-	https://id.heroku.com <br/ >
-    Para usar ferramentas como banco de dados, ele solicita o cadastro de um cartão de crédito.
+	https://id.heroku.com
 </p>
