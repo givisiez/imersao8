@@ -67,14 +67,13 @@ https://generate.plus/
 ## Gerencia variáveis de ambiente (.env)
 Crie um arquivo .env na raiz do projeto "/api" com as variaveis abaixo.
 
-[x] SECRETE_KEY = 'crieSuaChaveAleatoria01010101'
-
-[x] URL_REQUEST = 'http://localhost:8080/'
-[x] DB_HOST = '127.0.0.1'
-[x] DB_USER = 'root'
-[x] DB_PASSWORD = 'userPass'
-[x] DB_DATABASE = 'imersaoNodejs'
-[x] DB_PORT = 3306
+SECRETE_KEY = 'crieSuaChaveAleatoria01010101'<br/>
+URL_REQUEST = 'http://localhost:8080/'<br/>
+DB_HOST = '127.0.0.1'<br/>
+DB_USER = 'root'<br/>
+DB_PASSWORD = 'userPass'<br/>
+DB_DATABASE = 'imersaoNodejs'<br/>
+DB_PORT = 3306
 
 Package: https://www.npmjs.com/package/dotenv
 ```
