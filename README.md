@@ -119,9 +119,20 @@ Agora vamos criar uma tela de login para se comunicar com a nossa API.
 O comando abaixo irá criar a estrutura padrão para iniciarmos.
 Obs: Rode o comando fora da pasta/projeto API.
 Teremos dois diretórios: API e APP.
-```
-npx create-react-app app
-```
+
+`npx create-react-app app`
+
 Rode o comando NPM start para abrir o projeto no browser "http://localhost:3000/". 
 Se tudo der certo, irá abrir com o logotipo do React.
+
+## Deploy
+Iremos utilizar duas plataformas grátis para hospedar nossas aplicações.
+O obejtivo de separa é só para demonstrar a prática em separar os serviços.
+Mas poderia deixar tudo na plataforma do Heroku, por exemplo.
+<b>VERCEL</b><br />
+Para publicar o app React. <br />
+https://vercel.com/
+<b>Heroku</b> <br />
+Para hospedar a API NodeJs com banco Mysql. <br />
+https://id.heroku.com
 
