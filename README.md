@@ -1,10 +1,10 @@
 <h1>Simples projeto em NodeJs, React e React Native</h1>
-<h6>Aplicação simples em NodeJs com React e React Native!</h6>
+<p>Aplicação simples em NodeJs com React e React Native!</p>
 
 <h2>API NodeJs</h2>
 <p>
     Se for clonar o projeto, instale todas as dependências 
-    indicadas pelo package.json
+    indicadas pelo <b style="color: pink">./package.json</b>
 </p>
 
 `npm i`
