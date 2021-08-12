@@ -123,7 +123,7 @@ https://www.npmjs.com/package/cors
 
 <h2>Deploy</h2>
 <p>
-	Iremos utilizar duas plataformas grátis para hospedar nossas aplicações.
+	Iremos utilizar duas plataformas "grátis" para hospedar nossas aplicações.
 	O obejtivo de separa é só para demonstrar a prática em separar os serviços.
 	Mas poderia deixar tudo na plataforma do Heroku, por exemplo.
 </p>
@@ -135,5 +135,6 @@ https://vercel.com/
 <h2>Heroku</h2>
 <p>
 	Para hospedar a API NodeJs com banco Mysql. <br  />
-	https://id.heroku.com
+	https://id.heroku.com <br/ >
+    Para usar ferramentas como banco de dados, ele solicita o cadastro de um cartão de crédito.
 </p>
