@@ -2,11 +2,12 @@
 <p>Aplicação simples utilizada para fins de estudos.</p>
 <h2>API NodeJs</h2>
 <p>
-	Clone o projeto e instale todas as dependências indicadas pelo "./package.json"
+	Clone o projeto e instale todas as dependências indicadas pelo "./package.json"<br>
+	Abaixo imagens da estrutura das aplicações.
 </p>
-
-![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
 ![Estrutura geral](https://github.com/givisiez/imersao8/blob/main/images/estrutura-geral.png?raw=true)
+![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
+
 
 `npm i`
 <h4>Criar o arquivo package</h4>
