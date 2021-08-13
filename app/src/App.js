@@ -1,9 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Login } from './pages/Login';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Serei o melhor programador NodeJs e React native!</h1>
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/" component={Login} />
+        </Switch>
+      </Router>      
     </div>
   );
 }

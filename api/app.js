@@ -11,9 +11,9 @@ const User = require('./models/user');
 app.use(express.json());
 
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", process.env.URL_REQUEST);
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000");//process.env.URL_REQUEST);
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
-    res.header("Access-Control-Allow-H747777777777eaders", "X-PINGOTHER, Content-Type, Authorization");
+    res.header("Access-Control-Allow-H747777777777eaders", "X-PINGOTHER, Content-Type, Authorization");    
     app.use(cors());
     next();
 });
@@ -83,7 +83,7 @@ app.post('/login', async (req, res) => {
         });
     }
 
-    if(!(await bcrypt.compare(req.body.password, theUser.password))) {
+   if(!(await bcrypt.compare(req.body.password, theUser.password))) {
         return res.status(200).json({
             error: true,
             message: 'Usuário ou senha incorreto!',
