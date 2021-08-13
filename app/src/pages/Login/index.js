@@ -14,7 +14,9 @@ export const Login = () => {
         message: ''
     });
     
-    const inputValue = e => setUser({ ...userValue, [e.target.name]: e.target.value });
+    const inputValue = e => setUser({ 
+        ...userValue, [e.target.name]: e.target.value 
+    });
 
     const loginSubmit = async e => {
         e.preventDefault(); // para não recarregar o formulario        
@@ -46,7 +48,7 @@ export const Login = () => {
     return (
         <div>
             <h1>Login</h1>
-            
+           
             { status.type === 'error' ? <p>{ status.message }</p> : '' }
             { status.type === 'success' ? <p>{ status.message }</p> : '' }
             
