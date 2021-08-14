@@ -316,6 +316,7 @@ https://www.npmjs.com/package/cors
 	Adicionar ícones para o projeto.</br>
 	https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
 </p>
+
 ```
 $ npm i --save @fortawesome/fontawesome-svg-core
 $ npm install --save @fortawesome/free-solid-svg-icons
