@@ -292,17 +292,6 @@ https://www.npmjs.com/package/cors
 `$ npm install --save react-router-dom`
 <p>Dependência responsável para gerenciar as rotas</p>
 
-<h3>history (Vrs. 4)</h3>
-
-`$ npm install --save history`
-<p>
-	Utilizado para mudar de página e renderizar a nova página sem recarregar toda a aplicação
-	https://github.com/remix-run/history/blob/v4/docs/Installation.md
-</p>
-
-`$ npm install --save react-router-dom`
-<p>Dependência responsável para gerenciar as rotas</p>
-
 <h2>History (Vrs. 4)</h2>
 
 `$ npm install --save history@4.9.0`
