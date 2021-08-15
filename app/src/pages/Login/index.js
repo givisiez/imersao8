@@ -1,13 +1,13 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../../Context/AuthContext";
 import api from "../../config/configApi";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
+import { Container, FormLogin, Title, Input, ButtonPrimary, AlertDanger, AlertSuccess } from "./styles";
 
 // identar Alt + Shift + F
 export const Login = () => {
-
-  const history = useHistory();  
-  const { signIn } = useContext(Context);  
+  const history = useHistory();
+  const { signIn } = useContext(Context);
   const [userValue, setUser] = useState({
     email: "",
     password: "",
@@ -28,8 +28,8 @@ export const Login = () => {
     };
 
     api
-      .post('/login', userValue, { headers })
-      .then((response) => {         
+      .post("/login", userValue, { headers })
+      .then((response) => {
         if (response.data.error) {
           setStatus({
             type: "error",
@@ -42,10 +42,10 @@ export const Login = () => {
           });
 
           // localStorage serve para salvar o token
-          localStorage.setItem('token', JSON.stringify(response.data.token));
-          api.defaults.headers.Authorizarion = `Beare ${response.data.token}`; 
+          localStorage.setItem("token", JSON.stringify(response.data.token));
+          api.defaults.headers.Authorizarion = `Beare ${response.data.token}`;
           signIn(true);
-          return history.push('/dashboard');
+          return history.push("/dashboard");
         }
       })
       .catch(() => {
@@ -57,30 +57,29 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-
-      {status.type === "error" ? <p>{status.message}</p> : ""}
-      {status.type === "success" ? <p>{status.message}</p> : ""}
-
-      <form onSubmit={loginSubmit}>
-        <label>Email</label>
-        <input
-          type="text"
-          name="email"
-          placeholder="Digite seu email"
-          onChange={inputValue}
-        />
-        <label>Email</label>
-        <input
-          type="password"
-          name="password"
-          placeholder="Digite sua senha"
-          autoComplete="on"
-          onChange={inputValue}
-        />
-        <button type="submit">Logar</button>
-      </form>
-    </div>
+    <Container>
+      <FormLogin>
+        <Title>Login</Title>
+        <form onSubmit={loginSubmit}>          
+          <Input
+            type="text"
+            name="email"
+            placeholder="E-mail"
+            onChange={inputValue}
+          /> 
+          <Input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            autoComplete="on"
+            onChange={inputValue}
+          />          
+          <ButtonPrimary type="submit">Acessar</ButtonPrimary>
+          
+          {status.type === "error" ? <AlertDanger>{status.message}</AlertDanger> : ""}
+          {status.type === "success" ? <AlertSuccess>{status.message}</AlertSuccess> : ""}
+        </form>
+      </FormLogin>
+    </Container>
   );
 };

@@ -311,3 +311,11 @@ $ npm i --save @fortawesome/fontawesome-svg-core
 $ npm install --save @fortawesome/free-solid-svg-icons
 $ npm install --save @fortawesome/react-fontawesome
 ```
+
+<h2>Style Components</h2>
+<p>
+	Transformar o CSS em componente </br>
+	https://styled-components.com/
+</p>
+
+`$ npm install --save styled-components`
