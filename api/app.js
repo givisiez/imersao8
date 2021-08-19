@@ -19,15 +19,13 @@ app.use((req, res, next) => {
 });
 
 app.get('/login/list', tokenValidCheck, async (req, res) => {
-    await User.findAll({
-        order: [['idUser', 'DESC']]
-    }).then(function(users){
+    await User.findAll({ order: [['idUser', 'DESC']] }).then(function(users) {
         return res.status(200).json({
             error: false,
             users
         });
-    }).catch(function(){
-        return res.status(200).jason({
+    }).catch(function() {
+        return res.status(200).json({
             error: true,
             message: 'Nenhum usuário localizado'
         });

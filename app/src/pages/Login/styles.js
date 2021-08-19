@@ -22,6 +22,7 @@ export const Title = styled.h1`
     font-size: 27px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
 `;
 
 export const Input = styled.input`    
