@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, TitleContent, Title  } from '../../styles/custom_adm';
+import { Container, TitleContent, Title  } from '../../styles/global';
 import Menu from '../../components/Menu';
 
 export const Dashboard = () => {

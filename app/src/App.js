@@ -5,9 +5,9 @@ import history  from './services/history';
 import { AuthProvider } from './Context/AuthContext';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faSpinner, faEye, faEdit, faUserMinus, faUser } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faSpinner);
+library.add(faSpinner, faEye, faEdit, faUserMinus, faUser );
 
 function App() {
   return (

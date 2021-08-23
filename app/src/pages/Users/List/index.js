@@ -5,13 +5,17 @@ import {
     Container, 
     TitleContent, 
     Title, 
-    ActionButton, 
+    ActionButton,
     SuccessButton,
     Table,
     AlertDanger,
-    AlertSuccess
-} from '../../../styles/custom_adm';
+    AlertSuccess,
+    PrimaryButton,
+    WarningButton,
+    DangerButton
+} from '../../../styles/global';
 import api from '../../../config/configApi';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const UsersList = () => {
 
@@ -24,7 +28,7 @@ export const UsersList = () => {
     const getUsers = async () => {
         await api.get('/login/list')
         .then((response) => {
-            console.log(response.data);
+            // console.log(response.data);
             if(response.data.error) {
                 setStatus({
                     type: 'error',
@@ -75,7 +79,23 @@ export const UsersList = () => {
                                 <td>{ user.idUser }</td>
                                 <td>{ user.name }</td>
                                 <td>{ user.email }</td>
-                                <td>Visualizar editar apagar</td>
+                                <td>
+                                    <Link to={'/users/show/' + user.uuid}>
+                                        <PrimaryButton title="Visualizar">
+                                            <FontAwesomeIcon icon="eye" />
+                                        </PrimaryButton> 
+                                    </Link>
+                                    <Link to={'/edit/' + user.uuid}>
+                                        <WarningButton title="Editar">
+                                            <FontAwesomeIcon icon="edit" />
+                                        </WarningButton>
+                                    </Link> 
+                                    <Link to={'/edit/' + user.uuid}>
+                                        <DangerButton title="Apagar">
+                                            <FontAwesomeIcon icon="user-minus" />
+                                        </DangerButton>
+                                    </Link>
+                                </td>
                             </tr>
                         ))
                     }                    

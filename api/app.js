@@ -102,9 +102,10 @@ app.post('/login', async (req, res) => {
    
 });
 
-app.get('/login', async (req, res) => {
-    let getKeyParams =  req.query.id;
+app.get('/login/:id', tokenValidCheck, async (req, res) => {
+    // let getKeyParams = req.query.id;
 
+    /*
     const checkUser = await User.findOne({
         where: {
             uuid: getKeyParams
@@ -114,7 +115,7 @@ app.get('/login', async (req, res) => {
     if (checkUser === null) {
         res.status(200).json({
             error: true,
-            message: 'Usuário não encontrado'
+            message: 'API: Usuário não encontrado' + ' |' + getKeyParams
         });
     } else {
         return res.status(200).json({
@@ -128,6 +129,24 @@ app.get('/login', async (req, res) => {
             ]            
         });
     }
+    */
+
+    await User.findOne({ where: { uuid: req.params.id } }).
+    then(user => {
+        return res.json({
+            error: false,
+            data: {
+                uuid: user.uuid,
+                name: user.name,
+                email: user.email
+            }
+        });
+    }).catch(function() {
+        return res.json({
+            error: true,
+            message: "API: Usuário não encontrado!"
+        });
+    })
 });
 
 // UPDATE
