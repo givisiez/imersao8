@@ -1,28 +1,32 @@
-const Sequelize = require('sequelize');
+const Op = require('sequelize');
 const db = require('./database');
 
 const User = db.define('tbUsers', {
     idUser: {
-        type: Sequelize.INTEGER,
+        type: Op.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
     uuid: {
-        type: Sequelize.CHAR(36),
-        defaultValue: Sequelize.UUIDV4,
+        type: Op.CHAR(36),
+        defaultValue: Op.UUIDV4,
         allowNull: false
     }, 
     name: {
-        type: Sequelize.STRING(128),
+        type: Op.STRING(128),
         allowNull: false      
     },
     email: {
-        type: Sequelize.STRING(128),
+        type: Op.STRING(128),
         allowNull: false 
     },
     password: {
-        type: Sequelize.STRING,
+        type: Op.STRING,
+        allowNull: false
+    },
+    idStatus: {
+        type: Op.INTEGER,
         allowNull: false
     }
 });

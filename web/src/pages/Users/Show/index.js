@@ -8,9 +8,11 @@ import {
   ActionButton,  
   AlertDanger,
   AlertSuccess,
-  InfoButton
+  InfoButton,
+  Content
 } from "../../../styles/global";
 import api from "../../../config/configApi";
+import { UserContent } from '../Styles/styles';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const UserShow = (props) => {
@@ -37,10 +39,11 @@ export const UserShow = (props) => {
       .catch(() => {
         setStatus({
           type: 'error',
-          message: 'Erro: Tente mais tarde!'
+          message: 'Erro: Tente mais tarde! - Não foi posível conectar na API'
         });
       });
     }
+    
     getUser();
   },[id]);
 
@@ -55,17 +58,20 @@ export const UserShow = (props) => {
           </Link>
         </ActionButton>
       </TitleContent>
-      {status.type === "error" ? (
-        <AlertDanger>{status.message}</AlertDanger>
-      ) : (
-        ""
-      )}
-      {status.type === "success" ? (
-        <AlertSuccess>{status.message}</AlertSuccess>
-      ) : (
-        ""
-      )}
-      { dataUser.name }
+      <Content>
+        {status.type === "error" ? (
+          <AlertDanger>{status.message}</AlertDanger>
+        ) : (
+          ""
+        )}
+        {status.type === "success" ? (
+          <AlertSuccess>{status.message}</AlertSuccess>
+        ) : (
+          ""
+        )}
+        <UserContent><b>Nome:</b> { dataUser.name }</UserContent> 
+        <UserContent><b>E-mail:</b> { dataUser.email }</UserContent>
+      </Content>
     </Container>
   );
 };

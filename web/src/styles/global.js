@@ -9,13 +9,14 @@ export const Container = styled.section`
 export const TitleContent = styled.section`
     display: flex;
     justify-content: space-between;
+    color: #3D7A8F;
 `;
 
 export const Title = styled.h1`
     font-size: 23px;
     font-family: sans-serif;
     margin: 10px 15px;
-    color: #1d1e1e;
+    color: #3D7A8F;
 `;
 
 export const ActionButton = styled.section`    
@@ -133,4 +134,30 @@ export const AlertSuccess = styled.p`
     border-radius: 4px;
     padding: 7px;
     font-family: Arial, Helvetica, sans-serif;
+`;
+
+export const Content = styled.section`
+    padding: 15px;
+`;
+
+export const Form = styled.form`
+    margin: 0 auto;
+`;
+
+export const Label = styled.label`
+   width: 100%;
+   padding: 12px;
+   margin-top: 6px;
+   margin-bottom: 16px;
+`;
+
+export const Input = styled.input`
+   width: 100%;
+   padding: 12px;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   resize: vertical;
 `;
