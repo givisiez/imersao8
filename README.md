@@ -255,7 +255,7 @@ https://www.npmjs.com/package/cors
 <p>https://preview.npmjs.com/package/bcryptjs/v/1.0.1</p> 
 
 `$ npm i --save bcryptjs`
-<h2>APP - React</h2>
+<h2>React - Web</h2>
 <p>
 	Agora vamos criar uma tela de login para se comunicar com a nossa API.<br  />
 	O comando abaixo irá criar a estrutura padrão para iniciarmos.<br  />
@@ -318,3 +318,69 @@ $ npm install --save @fortawesome/react-fontawesome
 </p>
 
 `$ npm install --save styled-components`
+
+<h2>React Native - APP</h2>
+<p>
+	Agora é hora de desenvolver a versão para dispositivos móveis. < /br>
+	Entre na raiz do projeto e em seguida rode o comando abaixo para criar o projeto.
+	Teremos a seguinte estrutura na raiz: api, app e web.
+	https://reactnative.dev/
+</p>
+
+`$ npm init app`
+
+<h2>Expo Go</h2>
+<p>
+	Vamos emular a aplicação em seu celular utilizando o Expo. </br>
+	Para isso, realize o download do app "Expo Go" na "Play Store" (Android).
+	Instale o pacote abaixo de forma global, como informado abaixo.
+	https://reactnative.dev/docs/environment-setup
+</p>
+
+`$ npm install -g expo-cli`
+
+<h2>Emular o projeto</h2>
+<p>
+	Rode o comando para emular o projeto no Expo, siga as instruções que 
+	irão aparcer em seu navegador (http://localhost:19002/). 
+	Use o QRcode no seu celuar.
+</p>
+
+`$ npm start`
+
+<h2>Rotas - Vrs.: 6.x</h2>
+<p>
+	Dependência para navegar entre as páginas.
+	https://reactnavigation.org/docs/getting-started
+	</br>
+	https://reactnavigation.org/docs/stack-navigator/
+</p>
+
+`$ npm install @react-navigation/native`
+
+`$ expo install react-native-screens react-native-safe-area-context`
+
+`$ npm install @react-navigation/stack`
+
+<p>
+	Caso apresente erro, rode os comandos a seguir.
+</p>
+
+`$ npm upgrade` 
+
+`$ npm i`
+
+<h2>Realizar chamada para API</h2>
+
+`$ npm i axios --save`
+
+<h2>Transforma css em componentes</h2>
+
+`$ npm i --save styled-components`
+
+<h2>Async-Storage</h2>
+<p>
+	É utilizada para armazenar dados persistentes no dispositivo.
+</p>
+
+`expo install @react-native-async-storage/async-storage`

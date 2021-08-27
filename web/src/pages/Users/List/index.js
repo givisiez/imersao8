@@ -89,11 +89,6 @@ export const UsersList = () => {
                                         <WarningButton title="Editar">
                                             <FontAwesomeIcon icon="edit" />
                                         </WarningButton>
-                                    </Link> 
-                                    <Link to={'/edit/' + user.uuid}>
-                                        <DangerButton title="Apagar">
-                                            <FontAwesomeIcon icon="user-minus" />
-                                        </DangerButton>
                                     </Link>
                                 </td>
                             </tr>

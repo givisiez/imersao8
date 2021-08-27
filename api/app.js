@@ -19,7 +19,12 @@ app.use((req, res, next) => {
 });
 
 app.get('/login/list', tokenValidCheck, async (req, res) => {
-    await User.findAll({ order: [['idUser', 'DESC']] }).then(function(users) {
+    await User.findAll({        
+        where: {
+            idStatus: [1,2,3]
+        },
+       order: [['idUser', 'DESC']]
+    }).then(function(users) {
         return res.status(200).json({
             error: false,
             users
@@ -56,12 +61,12 @@ app.post('/login/create', async (req, res) => {
     await User.create(data).then(function() {
         return res.status(200).json({
             error: false,
-            msg: "Usuário cadastrado com sucesso!"
+            message: "Usuário cadastrado com sucesso!"
         })
     }).catch(function() {
         return res.status(400).json({
             error: true,
-            msg:"Erro ao realizar o cadastro!",
+            message:"Erro ao realizar o cadastro!",
             error: ""
         });
     });
@@ -103,37 +108,9 @@ app.post('/login', async (req, res) => {
 });
 
 app.get('/login/:id', tokenValidCheck, async (req, res) => {
-    // let getKeyParams = req.query.id;
-
-    /*
-    const checkUser = await User.findOne({
-        where: {
-            uuid: getKeyParams
-        }
-    });
-
-    if (checkUser === null) {
-        res.status(200).json({
-            error: true,
-            message: 'API: Usuário não encontrado' + ' |' + getKeyParams
-        });
-    } else {
-        return res.status(200).json({
-            error: false,
-            data: [
-                {
-                    uuid: checkUser.uuid,
-                    name: checkUser.name,            
-                    email: checkUser.email 
-                }
-            ]            
-        });
-    }
-    */
-
     await User.findOne({ where: { uuid: req.params.id } }).
     then(user => {
-        return res.json({
+        return res.status(200).json({
             error: false,
             data: {
                 uuid: user.uuid,
@@ -142,7 +119,7 @@ app.get('/login/:id', tokenValidCheck, async (req, res) => {
             }
         });
     }).catch(function() {
-        return res.json({
+        return res.status(404).json({
             error: true,
             message: "API: Usuário não encontrado!"
         });
@@ -150,50 +127,86 @@ app.get('/login/:id', tokenValidCheck, async (req, res) => {
 });
 
 // UPDATE
-app.put('/login/update/password', tokenValidCheck, async (req, res) => {
+app.put('/login/update', tokenValidCheck, async (req, res) => {
     var data = req.body;
     data.password = await bcrypt.hash(data.password, 10);
     
-    if(!data.uuid) {
+    if(!data.id) {
         return res.status(404).json({
             error: true,
-            message: "Não foi possível atualizar a senha!",
+            message: "Não foi possível atualizar os dados!",
             step: 0
         });
     }
 
     const checkUser = await User.findOne({
         where: {
-            uuid: data.uuid           
+            uuid: data.id           
         }
     });
 
     if(checkUser === null) {
         return res.status(404).json({
             error: true,
-            message: "Não foi possível atualizar a senha!",
+            message: "Não foi possível atualizar!",
             step: 1
         });
     }
 
     await User.update(data, { 
         where: { 
-            uuid: data.uuid 
+            uuid: data.id 
         } 
     }).then(function(){
         res.status(200).json({
             error: false,
-            message: 'Senha atualizada com sucesso!'
+            message: 'Dados atualizados com sucesso!',
+            step: 2
         });
     }).catch(function(err) {
         res.status(404).json({
             error: true,
             message: 'Não foi possível atualizar a senha!',
-            step: 2
+            step: 3
         });
     }); 
     
 });
+
+// DELETE
+/*
+app.delete('/login/update/:id', tokenValidCheck, async (req, res) => {
+    var data = req.body;   
+    
+    if(!data.id) {
+        return res.status(404).json({
+            error: true,
+            message: "Não foi possível atualizar os dados!",
+            step: 0
+        });
+    }
+
+    await User.update(data.idStatus, { 
+        where: {
+            uuid: data.id,
+            idStatus: [1, 2, 3]
+        } 
+    }).then(function(){
+        res.status(200).json({
+            error: false,
+            message: 'Desativado com sucesso!',
+            step: 2
+        });
+    }).catch(function(err) {
+        res.status(404).json({
+            error: true,
+            message: 'Não foi possível realizar a solicitação!',
+            step: 3
+        });
+    }); 
+    
+});
+*/
 
 app.listen(8080, function(){
     console.log("Servidor iniciado na porta 8080: http://localhost:8080");
