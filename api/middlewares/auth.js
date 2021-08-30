@@ -9,7 +9,7 @@ module.exports = {
         if (typeof authHeader !== 'string') {            
             return res.json({ 
                 error: true,
-                message: "Necessário realizar o login novamente!"
+                message: "Necessário realizar o login novamente!: " + authHeader 
              });
         }
     
