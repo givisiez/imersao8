@@ -329,8 +329,6 @@ $ npm install --save @fortawesome/react-fontawesome
 	https://reactnative.dev/
 </p>
 
-`$ expo init app`
-
 <h2>Expo Go</h2>
 <p>
 	Vamos emular a aplicação em seu celular utilizando o Expo. </br>
@@ -340,6 +338,8 @@ $ npm install --save @fortawesome/react-fontawesome
 </p>
 
 `$ npm install -g expo-cli`
+
+`$ expo init app`
 
 <h2>Emular o projeto</h2>
 <p>
