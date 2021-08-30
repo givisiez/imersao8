@@ -329,7 +329,7 @@ $ npm install --save @fortawesome/react-fontawesome
 	https://reactnative.dev/
 </p>
 
-`$ npm init app`
+`$ expo init app`
 
 <h2>Expo Go</h2>
 <p>
