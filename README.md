@@ -10,6 +10,8 @@ Abaixo a sequência utilizada para o projeto.</p>
 
 ![Estrutura da API](https://github.com/givisiez/imersao8/blob/main/images/estrutura-api.png?raw=true)
 
+![Estrutura da WEB](https://github.com/givisiez/imersao8/blob/main/images/estrutura-web.png?raw=true)
+
 
 `$ npm i`
 <h4>Criar o arquivo package</h4>
