@@ -1,4 +1,4 @@
-<h1>Projeto em NodeJs, React e React Native</h1>
+<h1>Projeto em NodeJs, React e React Native!</h1>
 <p>Aplicação simples utilizada para fins de estudos. <br />
 Abaixo a sequência utilizada para o projeto.</p>
 <h2>API - NodeJs</h2>
